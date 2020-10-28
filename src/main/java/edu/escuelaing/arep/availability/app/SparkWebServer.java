@@ -1,6 +1,8 @@
 package edu.escuelaing.arep.availability.app;
 
 import static spark.Spark.*;
+
+import edu.escuelaing.arep.exceptions.PadovanException;
 import edu.escuelaing.arep.services.PadovanNumber;
 import spark.Request;
 import spark.Response;
@@ -18,21 +20,29 @@ public class SparkWebServer {
         port(getPort());
         get("hello", (req, res) -> "Hello Service! :)");
         get("/api/v1/getPadovanNumber", (req, res) -> getPadovanNumber(req, res));
-        
+
     }
 
     /**
      * Función que devuelve el numero correspondiente de la sucesion de Padovan.
-     * @param req Spark Request 
+     * 
+     * @param req Spark Request
      * @param res Spark Response
      * @return
      */
-    private static BigInteger getPadovanNumber(Request req, Response res) {
+    private static Object getPadovanNumber(Request req, Response res) {
         PadovanNumber pNumber = new PadovanNumber();
         String s = req.queryParams("number");
         int number = Integer.parseInt(s);
-        BigInteger answer =  pNumber.getNumber(number);
-        return answer;
+        BigInteger answer;
+        try {
+            answer = pNumber.getNumber(number);
+            return answer;
+        } catch (PadovanException e) {
+            res.status(400);
+            return e.getMessage();
+        }
+    
     }
 
     private static int getPort() {
