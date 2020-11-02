@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"edu.escuelaing.arep.exceptions","l":"PadovanException"},{"p":"edu.escuelaing.arep.services","l":"PadovanNumber"},{"p":"edu.escuelaing.arep.availability.app","l":"SparkWebServer"}]
