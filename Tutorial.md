@@ -72,7 +72,7 @@ Para desplegarlo los haremos de la siguiente manera:
 
 5. Dejaremos todos los pasos siguientes por defecto hasta el 6 paso, configurar el grupo de seguridad, Podemos crear uno nuevo o usar uno existente. Aquí usaremos uno existente, lo importante es que los puertos coincidan con los que usaran los servicios.
     
-    ![Security.jpg](img/Security.jpg)
+    ![Security.jpg](img/security.jpg)
 
 6. Cuando lanzamos la instacia nos pide escoger un para de llaves, pueden ser unas ya creadas o podemos crearlas. Aquí crearemos un par y descargaremos las llaves para poder acceder a la instancia de manera remota.
     
