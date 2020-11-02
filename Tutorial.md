@@ -96,7 +96,7 @@ En la sección de instancias de AWS ya deberia aparecer la maquina que acabamos 
     
     También puede revisar la opción de conectar que le aparece al seleccionar una instancia, esta le explicara tambien como conectarse y le dara el comando exacto con ssh.
 
-    ![Acceso.jpg](img/Acceso.jpg)
+    ![acceso.jpg](img/acceso.jpg)
 
     Después de acceder se debe ejecutar el siguiente comando:
 
@@ -128,8 +128,8 @@ En la sección de instancias de AWS ya deberia aparecer la maquina que acabamos 
 
 7. Comprobamos que el servicio si se este ejecutando accediendo a la url pública de la instancia y el puerto en un navegador.
 
-    ![Prueba1.jpg](img/Prueba1.jpg)
-    ![Prueba2.jpg](img/Prueba2.jpg)
+    ![Prueba1.jpg](img/prueba1.jpg)
+    ![Prueba2.jpg](img/prueba2.jpg)
 
 Con las teclas "CTRL" + "C" dejará de ejecutarlo.
 
